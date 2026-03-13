@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "pdf-tounicode-fix"
+version = "1.0.0"
+description = "Fix Chinese text copy garbled characters in PDF by rebuilding ToUnicode CMap from system fonts"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "zhanghao50671" },
+]
+keywords = ["pdf", "cjk", "chinese", "tounicode", "cmap", "font", "fix", "garbled"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+    "Topic :: Text Processing",
+]
+dependencies = [
+    "pymupdf>=1.24.0",
+    "fonttools>=4.50.0",
+]
+
+[project.scripts]
+pdf-tounicode-fix = "fix_pdf_tounicode:main"
+
+[project.urls]
+Homepage = "https://github.com/zhanghao50671/pdf-tounicode-fix"
+Repository = "https://github.com/zhanghao50671/pdf-tounicode-fix"
+Issues = "https://github.com/zhanghao50671/pdf-tounicode-fix/issues"
