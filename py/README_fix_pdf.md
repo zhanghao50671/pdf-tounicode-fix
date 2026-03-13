@@ -2,7 +2,7 @@
 
 ## 问题诊断
 
-**文件**: `clean-SHB_recovered_cleaned.pdf` (华为 ADS 4.0 智能驾驶系统功能安全技术说明书)
+**文件**: `clean-SHB_recovered_cleaned.pdf` (智能驾驶系统功能安全技术说明书)
 
 **症状**: WPS 打开能正确显示中文，但复制文本时得到乱码字符（如 `Ც㜭傮傦` 而非 `智能驾驶`）。
 
